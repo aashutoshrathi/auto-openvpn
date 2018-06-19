@@ -11,7 +11,7 @@ import pyperclip
 
 
 def update():
-    os.system("pip install --upgrade aovpn")
+    os.system("pip install --upgrade auto-openvpn")
 
 def show_help():
     print("Usage: aovpn [OPTIONS] username [USERNAME]")
