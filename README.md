@@ -45,6 +45,10 @@ $ pip install auto-openvpn
 $ aovpn -U
 ```
 
+## Demo
+
+![Demo](https://media.giphy.com/media/7SWHqisJev13A5su06/giphy.gif)
+
 
 ## Using
 
