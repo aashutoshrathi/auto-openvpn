@@ -26,9 +26,6 @@ def show_help():
 
 def login(un=None, arg=None):
     print("This might take time, just sit back and relax....")
-    caps = DesiredCapabilities().CHROME
-    caps["pageLoadStrategy"] = "eager"
-
     options = webdriver.ChromeOptions()
 
     prefs = {'profile.managed_default_content_settings.images':2}
@@ -42,7 +39,7 @@ def login(un=None, arg=None):
     if un == None:
         un = ''.join(random.choices(string.ascii_letters + string.digits, k=5))
 
-    driver = webdriver.Chrome(chrome_options=options, desired_capabilities=caps)
+    driver = webdriver.Chrome(chrome_options=options)
     # driver = webdriver.PhantomJS('C:\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe')
     driver.get('https://www.tcpvpn.com/home')
 
