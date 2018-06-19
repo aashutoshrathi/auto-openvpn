@@ -1,10 +1,10 @@
-# git-stalk-cli
+# auto-openvpn
 
 
 [![PyPI](https://img.shields.io/pypi/v/aovpn.svg)](https://pypi.org/project/aovpn/)
 [![Build Status](https://travis-ci.com/aashutoshrathi/auto-openvpn.svg?token=x5wHaKpXyy9apivkjrhr&branch=master)](https://travis-ci.com/aashutoshrathi/auto-openvpn)
 
-A command line interface for creating an OpenVPN account.
+A command line interface for creating an OpenVPN account which will last for 5 days.
 
 
 ## Installation
