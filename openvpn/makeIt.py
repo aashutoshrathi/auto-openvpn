@@ -90,6 +90,8 @@ def run():
             update()
         elif len(sys.argv) == 2:
             login(sys.argv[1])
+    if len(sys.argv) == 1:
+        login()
     else:
         print("Incorrect call, you can type aovpn --help for help")
 

@@ -28,6 +28,11 @@ Now, extract the zip and save folder to Home Drive. Also add `C:\chromedriver_wi
 $ pip install pyperclip
 ```
 
+### UDP VPN config
+
+Download UDP VPN config from tcpvpn.com, and choose port 53.
+
+
 ## Installation
 
 ```sh
