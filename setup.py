@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="auto-openvpn",
-    version="0.0.3",
+    version="1.0.0",
     author="Aashutosh Rathi",
     author_email="aashutoshrathi@gmail.com",
     description="One command OpenVPN free account",

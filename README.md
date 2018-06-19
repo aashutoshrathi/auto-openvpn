@@ -6,12 +6,40 @@
 
 A command line interface for creating an OpenVPN account which will last for 5 days.
 
+OpenVPN supports unlimited **online gaming** and works for Port **53**, 8080 and 25000.
+
+
+## Prerequisites
+
+#### Selenium
+
+First, install python package using,
+
+```sh
+$ pip install selenium
+```
+
+and then Download Chrome Drivers from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+
+Now, extract the zip and save folder to Home Drive. Also add `C:\chromedriver_win32` to `PATH` variable.
+
+#### pyperclip
+```sh
+$ pip install pyperclip
+```
 
 ## Installation
 
 ```sh
- pip install auto-openvpn
+$ pip install auto-openvpn
 ```
+
+### Updating
+
+```sh
+$ aovpn -U
+```
+
 
 ## Using
 
@@ -23,9 +51,11 @@ $ aovpn 4CSGo
   Username: udpvpn.com-4CSGo (Copied to your clipboard)
   Password: test
   Valid till 25/06/2018
-
 ```
 
+## How does it work?
+
+It uses Headless Chrome driver to load `https://www.tcpvpn.com/home` and then select Asia -> India -> UDP VPN, and then submits the form for creating an account for 5 days with random **username** and **password** as `test` and *copies* the username to your clipboard.
 
 ## Limitations
 
