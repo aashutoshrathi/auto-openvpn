@@ -30,6 +30,7 @@ $ aovpn 4CSGo
 ## Limitations
 
 You should not make more than 3 accounts in a day and more than one in a minute.
+
 This may lead to blocking your IP forever.
 
 

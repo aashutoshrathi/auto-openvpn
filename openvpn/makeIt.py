@@ -23,6 +23,7 @@ def show_help():
 
 
 def login(un=None, arg=None):
+    print("This might take time, just sit back and relax....")
     options = webdriver.ChromeOptions()
     options.set_headless(True)
     options.add_argument('--headless')
