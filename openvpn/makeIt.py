@@ -8,8 +8,6 @@ from selenium import webdriver
 import random
 import string
 import pyperclip
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-
 
 
 def update():
@@ -37,7 +35,7 @@ def login(un=None, arg=None):
     options.add_argument('log-level=3')
 
     if un == None:
-        un = ''.join(random.choices(string.ascii_letters + string.digits, k=5))
+        un = ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(5))
 
     driver = webdriver.Chrome(chrome_options=options)
     # driver = webdriver.PhantomJS('C:\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe')

@@ -13,23 +13,14 @@ OpenVPN supports unlimited **online gaming** and works for Port **53**, 8080 and
 
 #### Selenium
 
-First, install python package using,
-
-```sh
-$ pip install selenium
-```
-
-and then Download Chrome Drivers from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+Download Chrome Drivers from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
 Now, extract the zip and save folder to Home Drive. Also add `C:\chromedriver_win32` to `PATH` variable.
 
-#### pyperclip
-```sh
-$ pip install pyperclip
-```
 
 ### UDP VPN config
 
+These auth credentials are meant for UDP VPN. 
 Download UDP VPN config from tcpvpn.com, and choose port 53.
 
 
