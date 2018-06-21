@@ -24,7 +24,7 @@ Now, extract the zip and save folder to Home Drive.
 
 These authentication credentials are meant for UDP VPN.
 
-Download UDP VPN config from [here](https://www.tcpvpn.com/download-config/india2.tcpvpn.com.rar), and choose port 53.
+Download UDP VPN config from [here](https://www.tcpvpn.com/download-config/india2.udpvpn.com.rar), and choose port 53.
 
 
 ## Installation
