@@ -15,13 +15,16 @@ OpenVPN supports unlimited **online gaming** and works for Port **53**, 8080 and
 
 Download Chrome Drivers from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
-Now, extract the zip and save folder to Home Drive. Also add `C:\chromedriver_win32` to `PATH` variable.
+Now, extract the zip and save folder to Home Drive. 
+
+**Also add `C:\chromedriver_win32` to `PATH` variable.**
 
 
 ### UDP VPN config
 
-These auth credentials are meant for UDP VPN. 
-Download UDP VPN config from tcpvpn.com, and choose port 53.
+These authentication credentials are meant for UDP VPN.
+
+Download UDP VPN config from [here](https://www.tcpvpn.com/download-config/india2.tcpvpn.com.rar), and choose port 53.
 
 
 ## Installation
