@@ -11,7 +11,7 @@ OpenVPN supports unlimited **online gaming** and works for Port **53**, 8080 and
 
 ## Prerequisites
 
-#### Selenium
+### Selenium
 
 Download Chrome Drivers from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
