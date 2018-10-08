@@ -35,8 +35,10 @@ def create_chrome_driver():
 
 def create_gecko_driver():
     options = webdriver.firefox.options.Options()
+    firefox_profile = webdriver.FirefoxProfile()
+    firefox_profile.set_preference('permissions.default.image', 2)
     options.set_headless(headless=True)
-    return webdriver.Firefox(firefox_options=options)
+    return webdriver.Firefox(firefox_options=options, firefox_profile=firefox_profile)
 
 def login(un=None, arg=None):
     print("This might take time, just sit back and relax....")
