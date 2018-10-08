@@ -21,9 +21,7 @@ def show_help():
     # print("    --version                        Print program version and exit")
     print("    -U, --update                     Update this program to latest version. Make sure that you have sufficient permissions (run with sudo if needed)")
 
-
-def login(un=None, arg=None):
-    print("This might take time, just sit back and relax....")
+def create_chrome_driver():
     options = webdriver.ChromeOptions()
 
     prefs = {'profile.managed_default_content_settings.images':2}
@@ -33,11 +31,24 @@ def login(un=None, arg=None):
     options.add_argument('--headless')
     options.add_argument('--disable-gpu')
     options.add_argument('log-level=3')
+    return webdriver.Chrome(chrome_options=options)
+
+def create_gecko_driver():
+    options = webdriver.firefox.options.Options()
+    options.set_headless(headless=True)
+    return webdriver.Firefox(firefox_options=options)
+
+def login(un=None, arg=None):
+    print("This might take time, just sit back and relax....")
+    try:
+        driver = create_chrome_driver()
+    except:
+        driver = create_gecko_driver()
+
 
     if un == None:
         un = ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(5))
 
-    driver = webdriver.Chrome(chrome_options=options)
     # driver = webdriver.PhantomJS('C:\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe')
     driver.get('https://www.tcpvpn.com/home')
 
