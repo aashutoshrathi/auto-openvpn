@@ -8,7 +8,7 @@ from selenium import webdriver
 import random
 import string
 import pyperclip
-
+BrowserInput=0 #change to 1 to use geckodriver (make sure it's in PATH)
 
 def update():
     os.system("pip install --upgrade auto-openvpn")
@@ -36,9 +36,12 @@ def login(un=None, arg=None):
 
     if un == None:
         un = ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(5))
-
-    driver = webdriver.Chrome(chrome_options=options)
-    # driver = webdriver.PhantomJS('C:\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe')
+    if(BrowserInput==0):
+	    driver = webdriver.Chrome(chrome_options=options)
+    else:
+	    driver = webdriver.Firefox()
+		#driver = webdriver.Firefox(executable_path=r'geckodriver.exe') 
+    
     driver.get('https://www.tcpvpn.com/home')
 
     print("Creating OpenVPN account for " + un + ".\nThis may take upto 20 seconds....")
